@@ -1,0 +1,24 @@
+Index: src/net/cfg80211/core.c
+===================================================================
+--- src.orig/net/cfg80211/core.c	2022-01-30 05:10:25.845178771 +0100
++++ src/net/cfg80211/core.c	2022-01-30 05:14:29.182887108 +0100
+@@ -38,6 +38,7 @@
+ MODULE_LICENSE("GPL");
+ MODULE_DESCRIPTION("wireless configuration support");
+ MODULE_ALIAS_GENL_FAMILY(NL80211_GENL_NAME);
++MODULE_VERSION("4.18.0-348_dup8.5");
+ 
+ /* RCU-protected (and RTNL for writers) */
+ LIST_HEAD(cfg80211_rdev_list);
+Index: src/net/rfkill/core.c
+===================================================================
+--- src.orig/net/rfkill/core.c	2022-01-30 05:23:28.720805944 +0100
++++ src/net/rfkill/core.c	2022-01-30 05:29:46.298250062 +0100
+@@ -97,6 +97,7 @@
+ MODULE_AUTHOR("Johannes Berg <johannes@sipsolutions.net>");
+ MODULE_DESCRIPTION("RF switch support");
+ MODULE_LICENSE("GPL");
++MODULE_VERSION("4.18.0-348_dup8.5");
+ 
+ 
+ /*
