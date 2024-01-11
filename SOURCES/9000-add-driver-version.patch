@@ -1,0 +1,81 @@
+Index: src/net/rfkill/core.c
+===================================================================
+--- src.orig/net/rfkill/core.c	2023-05-31 09:10:43.080564771 +0200
++++ src/net/rfkill/core.c	2023-05-31 09:18:14.284745810 +0200
+@@ -86,6 +86,7 @@
+ MODULE_AUTHOR("Johannes Berg <johannes@sipsolutions.net>");
+ MODULE_DESCRIPTION("RF switch support");
+ MODULE_LICENSE("GPL");
++MODULE_VERSION("5.14.0_284.11.1_dup9.2");
+ 
+ 
+ /*
+Index: src/net/rfkill/rfkill-gpio.c
+===================================================================
+--- src.orig/net/rfkill/rfkill-gpio.c	2023-05-31 09:10:43.081564763 +0200
++++ src/net/rfkill/rfkill-gpio.c	2023-05-31 09:18:40.427524539 +0200
+@@ -171,3 +171,4 @@
+ MODULE_DESCRIPTION("gpio rfkill");
+ MODULE_AUTHOR("NVIDIA");
+ MODULE_LICENSE("GPL");
++MODULE_VERSION("5.14.0_284.11.1_dup9.2");
+Index: src/net/wireless/core.c
+===================================================================
+--- src.orig/net/wireless/core.c	2023-05-31 09:09:16.234299832 +0200
++++ src/net/wireless/core.c	2023-05-31 09:17:23.322177154 +0200
+@@ -37,6 +37,7 @@
+ MODULE_AUTHOR("Johannes Berg");
+ MODULE_LICENSE("GPL");
+ MODULE_DESCRIPTION("wireless configuration support");
++MODULE_VERSION("5.14.0_284.11.1_dup9.2");
+ MODULE_ALIAS_GENL_FAMILY(NL80211_GENL_NAME);
+ 
+ /* RCU-protected (and RTNL for writers) */
+Index: src/net/wireless/lib80211.c
+===================================================================
+--- src.orig/net/wireless/lib80211.c	2023-05-31 09:09:16.237299807 +0200
++++ src/net/wireless/lib80211.c	2023-05-31 09:16:48.133474988 +0200
+@@ -31,6 +31,7 @@
+ MODULE_DESCRIPTION(DRV_DESCRIPTION);
+ MODULE_AUTHOR("John W. Linville <linville@tuxdriver.com>");
+ MODULE_LICENSE("GPL");
++MODULE_VERSION("5.14.0_284.11.1_dup9.2");
+ 
+ struct lib80211_crypto_alg {
+ 	struct list_head list;
+Index: src/net/wireless/lib80211_crypt_ccmp.c
+===================================================================
+--- src.orig/net/wireless/lib80211_crypt_ccmp.c	2023-05-31 09:09:16.238299798 +0200
++++ src/net/wireless/lib80211_crypt_ccmp.c	2023-05-31 09:17:47.211974952 +0200
+@@ -29,6 +29,7 @@
+ MODULE_AUTHOR("Jouni Malinen");
+ MODULE_DESCRIPTION("Host AP crypt: CCMP");
+ MODULE_LICENSE("GPL");
++MODULE_VERSION("5.14.0_284.11.1_dup9.2");
+ 
+ #define AES_BLOCK_LEN 16
+ #define CCMP_HDR_LEN 8
+Index: src/net/wireless/lib80211_crypt_tkip.c
+===================================================================
+--- src.orig/net/wireless/lib80211_crypt_tkip.c	2023-05-31 09:09:16.239299790 +0200
++++ src/net/wireless/lib80211_crypt_tkip.c	2023-05-31 09:17:37.889053861 +0200
+@@ -36,6 +36,7 @@
+ MODULE_AUTHOR("Jouni Malinen");
+ MODULE_DESCRIPTION("lib80211 crypt: TKIP");
+ MODULE_LICENSE("GPL");
++MODULE_VERSION("5.14.0_284.11.1_dup9.2");
+ 
+ #define TKIP_HDR_LEN 8
+ 
+Index: src/net/wireless/lib80211_crypt_wep.c
+===================================================================
+--- src.orig/net/wireless/lib80211_crypt_wep.c	2023-05-31 09:09:16.239299790 +0200
++++ src/net/wireless/lib80211_crypt_wep.c	2023-05-31 09:17:08.573301987 +0200
+@@ -25,6 +25,7 @@
+ MODULE_AUTHOR("Jouni Malinen");
+ MODULE_DESCRIPTION("lib80211 crypt: WEP");
+ MODULE_LICENSE("GPL");
++MODULE_VERSION("5.14.0_284.11.1_dup9.2");
+ 
+ struct lib80211_wep_data {
+ 	u32 iv;
